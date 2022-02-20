@@ -1,0 +1,17 @@
+{{#if books}}
+   {{#each books}}
+   <div class="col-3">
+      <div class="card" style="width: 18rem;">
+         <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <h6 class="card-title">Author: {{author}}</h6>
+            <h7 class="card-title">ISBN: {{isbn}}</h7>
+         </div>
+         <div class="card-footer">
+            <a type="button" class="btn btn-primary">Edit</a>
+            <a type="button" class="btn btn-danger">Delete</a>
+         </div>
+      </div>
+   </div>
+   {{/each}}
+{{/if}}

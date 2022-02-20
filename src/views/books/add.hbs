@@ -1,0 +1,19 @@
+<div class="col-md-6 mx-auto">
+<div class="card">
+   <div class="card-body">
+      <form action="/books/add" method="POST">
+         <div class="mb-3">
+            <input type="text" class="form-control" name="title" placeholder="Book">
+         </div>
+         <div class="mb-3">
+            <input type="text" class="form-control" name="author" placeholder="Author">
+         </div>
+         <div class="mb-3">
+            <input type="text" class="form-control" name="isbn" placeholder="ISBN" pattern="^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$">
+         </div>
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+   </div>
+</div>
+</div>
+
